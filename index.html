@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de la clase 4</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <form action="mailto:juarezmercedes@yahoo.com.ar" method="post">
+<div>
+    <LABel>
+        Nombre
+        <BR>
+            <!--agregar required al final de la etiqueta input-->
+    <input type="text" name="NOMBRE" required>
+    </LABel>
+    </div>
+<!--prestar atencion como se escribe lo del mail para que aparezca el cartelitoo del formato-->
+<div>
+    <LABel for="campoemail">Email
+            <BR>
+    <input type="email" name="email" id="campoemail" required></label>
+    
+    </div>
+
+    <!--localidad-->
+<div>
+    <label>Localidad
+         <select name="Localidad" required>
+            <option value>Seleccionar...</option>
+                <option value="CABA" >CABA</option>
+                <option  value="Bs As">Bs As</option>
+                <option value="Amba">Amba</option>
+                <option value="blablablablablablalb">blablablablablablalb</option>
+         </select>
+    </label>
+
+</div>
+
+<div>
+    <label for="campoFecha">Fecha</label>
+<input type="date" name="Fecha" id="campoFecha" required>
+
+</div>
+<!--para que el boton elija uno solo las 3 opciones comparten el mismo name-->
+<!--como tiene label podemos hacer foco en la palabra y la selecciona-->
+<div>
+    Género
+    <label >
+        Masculino
+        <input type="radio" name="genero" value="M" checked>
+    </label>
+        <label >
+            Femenino
+            <input type="radio" name="genero" value="F"  >
+        </label>
+        <label >
+            Deseo no contestar
+            <input type="radio" name="genero" value="N" >
+        </label>
+</div>
+
+<div>
+    <label>Mensaje
+        <br>
+        <!--cols es el ancho-->
+        <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+    </label>
+
+
+</div>
+
+
+
+
+<div>
+        
+    
+     <LABel>
+        <INput type="checkbox" name="PERMISO" value="true" required>
+                 ACEPTO LOS TERMINOS 
+    </LABel>
+ <BUTTon type="submit">ENVIAR INFO</BUTTon>
+</div>
+
+
+</form>
+</body>
+</html>
